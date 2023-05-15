@@ -1,4 +1,4 @@
-import { rgbToHex } from './colors.js';
+import { rgbToHex, rgb2lab } from './colors.js';
 import { AppError } from './error.js';
 import { PixelIterator } from './filters.js';
 
