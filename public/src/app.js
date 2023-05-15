@@ -111,7 +111,8 @@ export class App {
             const b = iterator.b;
 
             const hexColorString = rgbToHex(r, g, b);
-            const logMessage = `rgb(${[r, g, b].join(', ')})\n hex: ${hexColorString}`;
+            const Lab = rgb2lab(r, g, b);
+            const logMessage = `rgb(${[r, g, b].join(', ')})\n hex: ${hexColorString} \n Lab: ${Lab}`;
             this.logger.log(logMessage, true);
 
             this.outputElement.style.backgroundColor = rgbToHex(r, g, b);
